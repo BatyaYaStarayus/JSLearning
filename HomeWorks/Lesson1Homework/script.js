@@ -36,6 +36,7 @@ var customArray = [1, 2, 3];
 
 console.log(customArray);
 
+// тут нужно было не 1 элемент массива перезаписать, а нужно было перезаписать все значения массива на 0, то есть customArray = 0
 customArray[0] = 10;
 
 console.log(customArray);
