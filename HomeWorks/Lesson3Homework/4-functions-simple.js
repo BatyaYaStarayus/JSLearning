@@ -1,7 +1,5 @@
 // Task1
 
-//@todo
-
 function getName() {
     var name = prompt("Your name?");
 
@@ -43,11 +41,9 @@ range(1, 3);
 
 // Task4
 
-//@todo
-
 function isPrime(y) {
 
-    if (y <= 2) {
+    if ((y <= 3) && (y !== 1)) {
         return true;
     } else {
         for (var j = 2; j < y; j++) {
@@ -55,6 +51,7 @@ function isPrime(y) {
                 return false;
             }
         }
+        return true;
     }
 }
 
@@ -62,14 +59,16 @@ function getPrimesSumBelow(x) {
 
     var primeNumbersSum = 0;
 
-    for (var i = x; i > 0; i--) {
-        if (isPrime(i) === true) {
+    for (var i = x; i > 1; i--) {
+        if (isPrime(i)) {
             primeNumbersSum += i;
         }
     }
+
+    console.log(primeNumbersSum);
 }
 
-console.log(getPrimesSumBelow(10));
+getPrimesSumBelow(10);
 
 // Task5
 
@@ -80,8 +79,6 @@ function isOdd(x) {
 isOdd(9);
 
 // Task6
-
-// @todo
 
 function returnOddNumbersInRangeArray(x, y) {
 
