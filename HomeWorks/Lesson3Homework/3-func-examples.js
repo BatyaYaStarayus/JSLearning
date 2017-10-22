@@ -43,7 +43,7 @@ canGoToManGym("Vasya", 30, "man"); // ? false
 
 // Task3
 
-Use Parameter Defaults:
+// Use Parameter Defaults:
 
     function getName( name ) {
         name = name || "Default name";
