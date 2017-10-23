@@ -1,12 +1,21 @@
-var vasya = { name: 'Вася', age: 23 };
-var masha = { name: 'Маша', age: 18 };
-var vovochka = { name: 'Вовочка', age: 6 };
+var arr = [ 'rrrA', 'toboR', 'ekiL', 'dooG', 'esoR' ];
 
-var people = [ vasya , masha , vovochka ];
+function getStringAndReverseSymbols(array) {
 
-people.sort(function (a, b, c) {
-    return people[a][b] > people[c][b];
-});
+    var editedString;
+    var arraysElement = [];
+    var arrayWithStrings = []
 
-// теперь people: [vovochka, masha, vasya]
-console.log(people[0].age) // 6
+    for (var i = 0; i < array.length; i++) {
+        arraysElement = array[i].split("");
+        arraysElement.reverse();
+        arraysElement.join("");
+        arrayWithStrings.push(arraysElement);
+    }
+
+    editedString = arrayWithStrings.join(" ");
+
+    return editedString;
+}
+
+getStringAndReverseSymbols(arr);
