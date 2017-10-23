@@ -191,9 +191,74 @@ function deleteArraysElementBySymbol(array, symbol) {
 deleteArraysElementBySymbol([1,2,3,4,3,3], "3");
 
 //Task13
+//@todo
+function intersection(array1, array2, array3) {
 
 
+
+}
 
 //Task14
+
+function addArraysElementsAccordingElementValue(array) {
+
+    var newArray = [];
+
+    for (var i = 0; i < array.length; i++) {
+
+        for (var j = array[i]; j > 0; j--) {
+
+            newArray.push(array[i]);
+        }
+    }
+
+    console.log(newArray);
+}
+
+addArraysElementsAccordingElementValue([2, 3, 1, 4]);
+
 //Task15
+
+function setArrayToNeededLength(array, neededLength) {
+
+    var arrayWithNeededLength = [];
+
+    for ( var i = 0; i < neededLength; i++) {
+        if(i < array.length) {
+            arrayWithNeededLength.push(array[i]);
+        } else {
+            arrayWithNeededLength.push(0);
+        }
+    }
+    console.log(arrayWithNeededLength);
+}
+
+setArrayToNeededLength([1,2,3], 3);
+
 //Task16
+
+//part1
+
+function getUniqueThreeMinIntegers(array) {
+
+    var arrayWithFirstUniqueIntegers = array.sort().filter(function (a, b) {
+        return array.indexOf(a) === b;
+    }).slice(0, 3);
+
+    console.log(arrayWithFirstUniqueIntegers);
+}
+
+getUniqueThreeMinIntegers([2, 2, 3, 3, 3, 1, 4, 4, 6, 5, 5, 5, 4, 4]);
+
+//part2
+
+function getFirstThreeNegativeIntegers(array) {
+
+    var arrayWithFirstThreeNegativeIntegers = array.filter(function (a) {
+        return a < 0;
+    }).slice(0, 3);
+
+    console.log(arrayWithFirstThreeNegativeIntegers);
+}
+
+getFirstThreeNegativeIntegers([3, -1, -3, 2, 0, 8, -6, -5]);

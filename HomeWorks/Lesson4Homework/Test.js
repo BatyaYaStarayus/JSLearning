@@ -1,14 +1,12 @@
-function deleteArraysElementBySymbol(array, symbol) {
+var vasya = { name: 'Вася', age: 23 };
+var masha = { name: 'Маша', age: 18 };
+var vovochka = { name: 'Вовочка', age: 6 };
 
-    var arrayWithDeletedElements = [];
+var people = [ vasya , masha , vovochka ];
 
-    for (var i = 0; i < array.length; i++) {
-        if ( !(array[i].toString().includes(symbol)) ) {
-            arrayWithDeletedElements.push(array[i]);
-        }
-    }
+people.sort(function (a, b, c) {
+    return people[a][b] > people[c][b];
+});
 
-    console.log(arrayWithDeletedElements);
-}
-
-deleteArraysElementBySymbol([1,2,3,4,3,3], "3");
+// теперь people: [vovochka, masha, vasya]
+console.log(people[0].age) // 6

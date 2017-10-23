@@ -41,3 +41,29 @@ getPrimeNumbersInRange(2, 10);
 
 // Task2
 
+//@todo
+
+
+// Task3
+
+//@todo
+
+
+// Task4
+
+//@todo
+
+
+// Task5
+
+//@todo
+
+// Task6
+
+//@todo
+
+// Task7
+
+//@todo
+
+
