@@ -1,12 +1,25 @@
-var vasya = { name: 'Вася', age: 23 };
-var masha = { name: 'Маша', age: 18 };
-var vovochka = { name: 'Вовочка', age: 6 };
+var tasksCompleted = {
+    'Anna': 29,
+    'Serg': 35,
+    'Elena': 1,
+    'Anton': 99
+};
 
-var people = [ vasya , masha , vovochka ];
+function getMaxValueWorker(obj) {
 
-people.sort(function (a, b, c) {
-    return people[a][b] > people[c][b];
-});
+    var workersArray = [];
+    var valuesArray = [];
+    var i;
 
-// теперь people: [vovochka, masha, vasya]
-console.log(people[0].age) // 6
+    for (i in obj) {
+        workersArray.push(i);
+        valuesArray.push(obj[i]);
+    }
+
+    var maxValue = valuesArray.sort()[valuesArray.length - 1];
+    var workerWithMaxValue = workersArray[valuesArray.indexOf(maxValue)];
+
+    return workerWithMaxValue;
+}
+
+getMaxValueWorker(tasksCompleted);
