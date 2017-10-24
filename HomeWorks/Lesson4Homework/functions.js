@@ -1,6 +1,7 @@
 // Task1
 
 //@todo
+// did not understand the task, will clarify on Wednesday on the lesson :)
 
 // Task2
 

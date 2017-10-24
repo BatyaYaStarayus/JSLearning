@@ -21,12 +21,31 @@ console.log(isPal('123212')); //false
 
 //Task2
 
-//@todo
+function delAnagrams(array) {
+
+    function getSortedStringFromArrayElement(element) {
+        var sortedString = element.toLowerCase().split("").sort().join("");
+
+        return sortedString;
+    }
+
+    var unifiedArrayWithSortedStrings = array;
+
+    for (var i = 0; i < array.length; i++) {
+        for(var j = i + 1; j < array.length; j++) {
+            if(getSortedStringFromArrayElement(array[i]) === getSortedStringFromArrayElement(array[j])) {
+                unifiedArrayWithSortedStrings.splice(j, 1);
+                j--;
+            }
+        }
+    }
+
+    return unifiedArrayWithSortedStrings;
+}
+
+delAnagrams(['воз', 'киборг', 'корсет', 'ЗОВ', 'гробик', 'костер', 'сектор']);
 
 //Task3
-
-//@todo
-// need some tweaks
 
 var arr = [ 'rrrA', 'toboR', 'ekiL', 'dooG', 'esoR' ];
 
@@ -39,8 +58,7 @@ function getStringAndReverseSymbols(array) {
     for (var i = 0; i < array.length; i++) {
         arraysElement = array[i].split("");
         arraysElement.reverse();
-        arraysElement.join("");
-        arrayWithStrings.push(arraysElement);
+        arrayWithStrings.push(arraysElement.join(""));
     }
 
     editedString = arrayWithStrings.join(" ");
@@ -128,15 +146,54 @@ var array = [
     {name: "L6", age: 10}
 ];
 
-var sortedArray = array.sort(function (a, b) {
-    return (a.age - b.age);
-})
+function sortArrayByAge(array) {
+    var sortedArray = array.sort(function (a, b) {
+        return (a.age - b.age);
+    })
 
-console.log(sortedArray);
+    return sortedArray;
+}
+
+sortArrayByAge(array);
 
 //Task8
 
-//@todo
+var array = [
+    {name: "L1", age: 45},
+    {name: "L2", age: 20},
+    {name: "L3", age: 10},
+    {name: "L4", age: 78},
+    {name: "L5", age: 41},
+    {name: "L6", age: 10}
+];
+
+function checkNamePresense(name) {
+
+    var nameIsPresent = false;
+
+    for (var i = 0; i < array.length; i++) {
+        if (array[i].name === name) {
+            nameIsPresent = true;
+        }
+    }
+
+    return nameIsPresent;
+}
+
+function getAndAddToArrayAgeAndName() {
+
+    var name = prompt("Your name?");
+
+    if(checkNamePresense(name)) {
+        alert("User with such name is already registered");
+    } else {
+        var age = +prompt("Your age?");
+        array.push({name: name, age: age});
+        array = sortArrayByAge(array);
+    }
+}
+
+getAndAddToArrayAgeAndName();
 
 //Task9
 
@@ -214,12 +271,34 @@ function deleteArraysElementBySymbol(array, symbol) {
 deleteArraysElementBySymbol([1,2,3,4,3,3], "3");
 
 //Task13
-//@todo
+
+function leaveUniqueElementsInArray(array) {
+
+    var arrayWithUniqueElementsOnly = array.filter(function (a, b) {
+        return array.indexOf(a) === b;
+    });
+
+    return arrayWithUniqueElementsOnly;
+}
+
 function intersection(array1, array2, array3) {
 
+    var intersectedArray = [];
 
+    for (var i = 0; i < array1.length; i++) {
+        for (var j = 0; j < array1.length; j++) {
+            for (var k = 0; k < array1.length; k++) {
+                if (array1[i] === array2[j] && array1[i] === array3[k]) {
+                    intersectedArray.push(array1[i]);
+                }
+            }
+        }
+    }
 
+    return leaveUniqueElementsInArray(intersectedArray);
 }
+
+intersection([1, 1,  2, 3], [101, 2, 1, 3, 3, 10], [2, 1, 2, 3, 2]);
 
 //Task14
 
