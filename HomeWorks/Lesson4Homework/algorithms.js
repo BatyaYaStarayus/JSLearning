@@ -90,7 +90,9 @@ removeClass(obj, 'blabla'); // без изменений (нет такого к
 // Task4
 
 var sum = 0;
-
+// Запрашивает по очереди значения при помощи prompt и сохраняет их в массиве
+// ?? что то я тут не увидела массив =) и получаеться ты спрашиваешь одно значение потом ты его записываешь в переменную и все на этом 
+// ввод заканчивается(
 function getSumOfNumbers() {
 
     var number = +prompt("Enter any number");
@@ -114,6 +116,7 @@ function fib(n) {
         fibArray.push(fibArray[i - 1] + fibArray[i - 2]);
     }
     alert(fibArray[n-1]);
+    // лучше уже тут из функции возвращать значение fibArray[n-1] а не просто делать alert
 }
 
 fib(77);
