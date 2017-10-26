@@ -1,27 +1,14 @@
-var numbersArray = [];
+function deleteArraysElementBySymbol(array, symbol) {
 
-function getNumbersArray() {
+    var arrayWithDeletedElements = [];
 
-    var number = +prompt("Enter any number");
-
-    if( (!isNaN(number)) && (number !== null)) {
-        numbersArray.push(number);
-        getNumbersArray();
+    for (var i = 0; i < array.length; i++) {
+        if (array[i] !== symbol) {
+            arrayWithDeletedElements.push(array[i]);
+        }
     }
 
-    return getSumOfNumbersInArray(numbersArray);
+    console.log(arrayWithDeletedElements);
 }
 
-function getSumOfNumbersInArray(array) {
-
-    var sum = 0;
-
-    for(var i = 0; i < array.length; i++) {
-        sum += array[i];
-    }
-
-    return sum;
-
-}
-
-alert(getNumbersArray());
+deleteArraysElementBySymbol([1,2,3,4,3,"3"], "3");

@@ -260,7 +260,7 @@ function deleteArraysElementBySymbol(array, symbol) {
     var arrayWithDeletedElements = [];
 
     for (var i = 0; i < array.length; i++) {
-        if ( !(array[i].toString().includes(symbol)) ) {
+        if (array[i] !== symbol) {
             arrayWithDeletedElements.push(array[i]);
         }
     }
@@ -268,7 +268,7 @@ function deleteArraysElementBySymbol(array, symbol) {
     console.log(arrayWithDeletedElements);
 }
 
-deleteArraysElementBySymbol([1,2,3,4,3,3], "3");
+deleteArraysElementBySymbol([1,2,3,4,3,"3"], "3");
 
 //Task13
 
