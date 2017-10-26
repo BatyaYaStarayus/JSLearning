@@ -1,44 +1,27 @@
-var array = [
-    {name: "L1", age: 45},
-    {name: "L2", age: 20},
-    {name: "L3", age: 10},
-    {name: "L4", age: 78},
-    {name: "L5", age: 41},
-    {name: "L6", age: 10}
-];
+var numbersArray = [];
 
-function sortArrayByAge(array) {
-    var sortedArray = array.sort(function (a, b) {
-        return (a.age - b.age);
-    })
+function getNumbersArray() {
 
-    return sortedArray;
-}
+    var number = +prompt("Enter any number");
 
-function checkNamePresense(name) {
-
-    var nameIsPresent = false;
-
-    for (var i = 0; i < array.length; i++) {
-        if (array[i].name === name) {
-            nameIsPresent = true;
-        }
+    if( (!isNaN(number)) && (number !== null)) {
+        numbersArray.push(number);
+        getNumbersArray();
     }
 
-    return nameIsPresent;
+    return getSumOfNumbersInArray(numbersArray);
 }
 
-function getAndAddToArrayAgeAndName() {
+function getSumOfNumbersInArray(array) {
 
-    var name = prompt("Your name?");
+    var sum = 0;
 
-    if(checkNamePresense(name)) {
-        alert("User with such name is already registered");
-    } else {
-        var age = +prompt("Your age?");
-        array.push({name: name, age: age});
-        array = sortArrayByAge(array);
+    for(var i = 0; i < array.length; i++) {
+        sum += array[i];
     }
+
+    return sum;
+
 }
 
-getAndAddToArrayAgeAndName();
+alert(getNumbersArray());

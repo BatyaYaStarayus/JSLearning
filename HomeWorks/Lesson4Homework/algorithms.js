@@ -89,20 +89,32 @@ removeClass(obj, 'blabla'); // без изменений (нет такого к
 
 // Task4
 
-var sum = 0;
+var numbersArray = [];
 
-function getSumOfNumbers() {
+function getNumbersArray() {
 
     var number = +prompt("Enter any number");
 
-    if( (!isNaN(number)) && (number !== null) ) {
-        sum += number;
-        getSumOfNumbers();
+    if( (!isNaN(number)) && (number !== null)) {
+        numbersArray.push(number);
+        getNumbersArray();
     }
+
+    return getSumOfNumbersInArray(numbersArray);
+}
+
+function getSumOfNumbersInArray(array) {
+
+    var sum = 0;
+
+    for(var i = 0; i < array.length; i++) {
+        sum += array[i];
+    }
+
     return sum;
 }
 
-alert(getSumOfNumbers());
+alert(getNumbersArray());
 
 // Task5
 
@@ -113,7 +125,7 @@ function fib(n) {
     for (var i = 2; i < n; i++) {
         fibArray.push(fibArray[i - 1] + fibArray[i - 2]);
     }
-    alert(fibArray[n-1]);
+    return (fibArray[n-1]);
 }
 
 fib(77);
