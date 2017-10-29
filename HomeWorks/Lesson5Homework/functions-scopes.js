@@ -31,6 +31,8 @@ test();
 
 // Task4
 
+// Task5
+
 a(); //ok
 b(); //error
 
@@ -44,14 +46,52 @@ function a(){
 
 // function b() was made via Function Expression, so it is not possible to call it before the creation
 
-// Task5
 // Task6
+
+var i = 0;
+
+for (; i< 10; i ++) {
+    console.log(i)
+}
+
+// will log in console number from 0 to 9
+
 // Task7
+
+function getFactorial(number) {
+
+    var factorial = 1;
+
+    for (var i = number; i > 1; i--) {
+        factorial *= i;
+    }
+
+    if (factorial % 2 === 0) {
+        return factorial*2;
+    } else {
+        return factorial;
+    }
+}
+
+getFactorial(5);
+
 // Task8
-// Task9
-// Task10
 
 //@todo
+
+function getRandomString() {
+
+    var string = "";
+    var numbers = /1-0/;
+
+}
+
+// Task9
+
+// was absent in homework file :)
+
+// Task10
+
 function getUniqueElementsArray(array) {
 
     var uniqueArray = array.filter(function (a, b) {
@@ -63,13 +103,13 @@ function getUniqueElementsArray(array) {
 
 function joinArrays(array1, array2, array3) {
 
-    var joinedToStringArrays= array1 + ", " + array2 + ", " + array3;
+    var joinedToStringArrays = (array1 + "," + array2 + "," + array3);
     var joinedArray = joinedToStringArrays.split(",");
 
     return getUniqueElementsArray(joinedArray);
 }
 
-joinArrays(([1, 2, 3], [101, 2, 1, 10], [2, 1]));
+joinArrays([1, 2, 3], [101, 2, 1, 10], [2, 1]);
 
 // Task11
 

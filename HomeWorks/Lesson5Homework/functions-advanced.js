@@ -1,7 +1,7 @@
 //@todo
-function isNimble(){ return true; }
-var canFly = function(){ return true; }; // ani
-window.isDeadly = function(){ return true; };
+function isNimble(){ return true; } // can be called before the creation;
+var canFly = function(){ return true; }; // can't be called before the creation;
+window.isDeadly = function(){ return true; }; // is a method of Window object;
 
 // Task1
 
@@ -56,4 +56,6 @@ function getSumOfPoweredNumberDigits(number, powerTo) {
 }
 
 getSumOfPoweredNumberDigits(2, 15);
-getSumOfPoweredNumberDigits(2, 1000); // NaN, too big integer)))
+getSumOfPoweredNumberDigits(2, 1000); // NaN, too big integer :)
+
+export {getRandomColorInRGB};
