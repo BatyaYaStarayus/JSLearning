@@ -36,7 +36,7 @@ function createTable(fcolor, scolor, content) {
 createTable("red", "black", [["A", "B", "C", "D", "E", "F", "G", "H"], ["1", "2", "3", "4", "5", "6", "7", "8"]]);
 
 // Task2
-//todo update import/export
+//import does not work, but if paste {getRandomColorInRGB} from "../Lesson5Homework/functions-advanced" works good
 function getRandomChar() {
 
     var randomString = Math.random().toString(36);
@@ -103,13 +103,74 @@ if(element.childNodes < 1) {
 
 // Task6
 
+function isPresentInBlock(block, element) {
 
+    var isPresent = true;
+
+    for(var i = 0; i < block.children.length; i++) {
+        if(block.children[i] === element) {
+            return isPresent;
+        } else {
+            isPresent = false;
+        }
+    }
+
+    return isPresent;
+}
+
+
+function createElementInBlock(blockLink, elementName) {
+
+    var element = document.createElement(elementName);
+    var block = document.querySelector(blockLink);
+
+    if(!isPresentInBlock(block, element)) {
+        block.appendChild(element);
+    } else {
+        alert("Element is already present");
+    }
+}
+
+createElementInBlock("div", "table");
 
 // Task7
+
+function createCloneNode(block) {
+
+    var blockToClone = document.querySelector(block);
+    var clonedBlock = blockToClone.cloneNode(true);
+
+    document.body.appendChild(clonedBlock);
+}
+
+createCloneNode("p");
+
 // Task8
+
+function addChildrenTo(block, count, type) {
+
+    var blockToAddChildren = document.querySelector(block);
+
+    for (count; count > 0; count--) {
+        var elementToAddAsAChild = document.createElement(type);
+        blockToAddChildren.appendChild(elementToAddAsAChild);
+    }
+}
+
+addChildrenTo("div", 3, "p");
+
 // Task9
 
+function replaceElBy(blockCurrent, blockToReplace) {
 
+    var currentBlock = document.querySelector(blockCurrent);
+    var insertedBlock = document.createElement(blockToReplace);
+    var parent = currentBlock.parentNode;
+
+    parent.replaceChild(insertedBlock, currentBlock);
+}
+
+replaceElBy("button", "div");
 
 // Task10
 
@@ -169,7 +230,7 @@ createList(["1", "2", "3"], false);
 function setCharsRandomColor(elementQuery) {
 
     var element = document.querySelector(elementQuery);
-    var elementText = element.innerText.split("");
+    var elementText = element.innerText;
 
     for (var i = 0; i < elementText.length; i++) {
 
@@ -179,7 +240,7 @@ function setCharsRandomColor(elementQuery) {
             elementText[i].style.color = randomColor;
         }
     }
-    var coloredString = elementText.join("");
+    var coloredString = elementText;
 
     element.innerText = coloredString;
 }
