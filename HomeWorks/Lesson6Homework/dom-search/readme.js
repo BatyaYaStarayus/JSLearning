@@ -25,6 +25,8 @@ var inputsArray = document.querySelectorAll("input");
 
 for (var i = 0; i < inputsArray.length; i++) {
     inputsArray[i].setAttribute("class", "input-lg");
+    // by setting attribute with setAttribute method you will remove all previous classes
+    // the idea is to add input-lg class to other classes in list for each input
 }
 
 // Task4
@@ -33,6 +35,7 @@ for (var i = 0; i < inputsArray.length; i++) {
 
 for (var i = 0; i < inputsArray.length; i++) {
     inputsArray[i].setAttribute("id", inputsArray[i].parentNode.children[0].innerText);
+    // here also add 'for' attribute to Labels
 }
 
 // Task5
@@ -53,6 +56,7 @@ for (var i = 0; i < inputsArray.length; i++) {
 
 var parent = document.querySelector("form");
 var button = parent.children[2];
+// or better use here parent.querySelector("button") because after you adding blocks the button can be already not a 2 child element but 3 one or etc.
 
 var objectsArray = [{tagName: "div", class: "input-group col-xs-12 marg"},
                     {tagName: "label", for: " ", text: "Gender"},
@@ -74,6 +78,8 @@ function createElement(elementObject) {
         if ( (i !== "text") && (i !== "tagName") ){
             element.setAttribute(i, elementObject[i]);
         }
+        // you can do the operation below here and don't create 2 cycles eg:
+        // if (i === "text") { element.innerText = elementObject[i]; }
     }
 
     for (var j in elementObject) {
