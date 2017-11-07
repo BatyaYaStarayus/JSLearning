@@ -59,12 +59,25 @@ function insertRow() {
 }
 
 // Task5
-
+//todo
 
 
 // Task6
 
+function clearProhibitedSymbols() {
+    var prohibitedSymbols = /[a-e]/gi;
+    var inputText = document.querySelector("input").value;
+    var editedText;
 
+    if (inputText[(inputText.length - 1)].match(prohibitedSymbols)) {
+        editedText = inputText.replace(prohibitedSymbols, "");
+        document.querySelector("input").value = editedText;
+    }
+}
+
+var inputField = document.querySelector("input");
+
+inputField.addEventListener("input", clearProhibitedSymbols);
 
 // Task7
 //todo
@@ -122,5 +135,94 @@ for (var i = 0; i < inputFieldsArray.length; i++) {
 }
 
 // Task9
+
+    //to add in html file
+    // <input id="width">
+    // <input id="height">
+    // <div style="height: 50px; width: 50px"></div>
+
+var blockElement = document.querySelector("div");
+var widthInputField = document.getElementById("width");
+var heightInputField = document.getElementById("height");
+
+function getParameter(parameter) {
+    return document.getElementById(parameter).value;
+}
+
+function setWidth() {
+    blockElement.style.width = getParameter("width") + "px";
+}
+
+function setHeight() {
+    blockElement.style.height = getParameter("height") + "px";
+}
+
+widthInputField.addEventListener("input", setWidth);
+heightInputField.addEventListener("input", setHeight);
+
 // Task10
+
+// index.html file for task
+
+// <!DOCTYPE html>
+// <html>
+// <style type="text/css">
+//     table {width: 300px; height: 300px; border: solid; background-color: white}
+// td {border: solid}
+// tr {border: solid}
+// </style>
+// <head>
+// <meta charset=utf-8 />
+//     <title>Insert row in a table - w3resource</title>
+// </head>
+// <body>
+// <table>
+// <tbody>
+// <tr>
+// <td></td>
+// <td></td>
+// <td></td>
+// </tr>
+// <tr>
+// <td></td>
+// <td></td>
+// <td></td>
+// </tr>
+// <tr>
+// <td></td>
+// <td></td>
+// <td></td>
+// </tr>
+// </tbody>
+// </table>
+// <script src="test.js"></script>
+//     </body>
+//     </html>
+
+var tableBody = document.querySelector("tbody");
+var count = 0;
+
+
+function setColorOnClick() {
+    checkColoredCells();
+    this.style.backgroundColor = "red";
+    count++;
+}
+
+function checkColoredCells() {
+    if (count >= 5) {
+        alert("Enough!");
+        tableBody.children[i].children[j].removeEventListener("click", setColorOnClick);
+
+    }
+}
+
+for (var i = 0; i < tableBody.children.length; i++) {
+    for(var j = 0; j < tableBody.children[i].children.length; j++) {
+        tableBody.children[i].children[j].addEventListener("click", setColorOnClick);
+    }
+}
+
 // Task11
+//todo
+

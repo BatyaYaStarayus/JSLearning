@@ -1,31 +1,25 @@
-var inputFieldsArray = document.querySelectorAll("input");
+var tableBody = document.querySelector("tbody");
+var count = 0;
 
-function checkAllInputsAreFilled() {
-    var allLengthIsTwo = true;
 
-    for (var i = 0; i < inputFieldsArray.length; i++) {
-        if (inputFieldsArray[i].value.length < 2) {
-            return allLengthIsTwo = false;
-        }
-    }
-    alert("All inputs are filled");
-    // added button to index.html file to focus it in case of all inputs are filled
-    document.querySelector("button").focus();
-    return allLengthIsTwo;
+function setColorOnClick() {
+    checkColoredCells();
+    this.style.backgroundColor = "red";
+    count++;
 }
 
-function verifyLength() {
-    console.log(this);
-    if (this.value.length === 2) {
-        if (this !== inputFieldsArray[inputFieldsArray.length - 1]) {
-            this.nextElementSibling.focus();
-        } else {
-            inputFieldsArray[0].focus();
-        }
+function checkColoredCells() {
+    if (count >= 5) {
+        alert("Enough!");
+        tableBody.children[i].children[j].removeEventListener("click", setColorOnClick);
+
     }
 }
 
-for (var i = 0; i < inputFieldsArray.length; i++) {
-    inputFieldsArray[i].addEventListener("input", verifyLength);
-    inputFieldsArray[i].addEventListener("focus", checkAllInputsAreFilled);
+
+
+for (var i = 0; i < tableBody.children.length; i++) {
+    for(var j = 0; j < tableBody.children[i].children.length; j++) {
+        tableBody.children[i].children[j].addEventListener("click", setColorOnClick);
+    }
 }
