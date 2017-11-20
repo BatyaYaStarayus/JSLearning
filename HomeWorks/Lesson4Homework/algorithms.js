@@ -43,7 +43,7 @@ getPrimeNumbersInRange(2, 10);
 
 var obj = {
     className: 'open menu'
-}
+};
 
 function addClass(obj, cls) {
 
@@ -68,7 +68,7 @@ console.log( obj.className ); // "open menu new me"
 
 var obj = {
     className: 'open open menu'
-}
+};
 
 function removeClass(obj, cls) {
 

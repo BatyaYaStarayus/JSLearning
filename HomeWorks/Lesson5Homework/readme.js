@@ -6,7 +6,7 @@ function multiplyArray(array, number) {
 
     var multipliedArray = array.map(function (a) {
         return a * number
-    })
+    });
 
     return multipliedArray;
 }

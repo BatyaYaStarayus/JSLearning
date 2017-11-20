@@ -15,7 +15,7 @@ function changeContent(rowIndex, columnIndex, newText) {
 // in index.html should be added script tag and src
 function removeColor() {
 
-    var parent = document.getElementById("colorSelect")
+    var parent = document.getElementById("colorSelect");
     var optionToRemove = document.querySelector("option:checked");
 
     parent.removeChild(optionToRemove);
@@ -59,8 +59,21 @@ function insertRow() {
 }
 
 // Task5
-//todo
 
+// add to html file
+// <button id="showButton" onclick="showPopUp()">Show</button>
+// <button id="hideButton" onclick="hidePopUp()">Hide</button>
+// <div id="popUp" style="visibility: hidden"> My PopUp </div>
+
+var popUp = document.querySelector("#popUp");
+
+function showPopUp() {
+    popUp.setAttribute("style", "visibility: visible");
+}
+
+function hidePopUp() {
+    popUp.setAttribute("style", "visibility: hidden");
+}
 
 // Task6
 
@@ -80,24 +93,49 @@ var inputField = document.querySelector("input");
 inputField.addEventListener("input", clearProhibitedSymbols);
 
 // Task7
-//todo
-var inputTextField = document.getElementById("inputField");
-inputTextField.addEventListener("input", separateWithDots)
+
+// index.html file
+
+// <!DOCTYPE html>
+// <html lang="en">
+// <head>
+// <meta charset="UTF-8">
+// <title>Title</title>
+// </head>
+// <body>
+// <input id="inputField" oninput="separateWithDots()">
+// <script src="test.js"></script>
+// </body>
+// </html>
+
+function replaceFinalDot(string) {
+    var stringWithReplacedDot;
+
+    if (string[string.length - 1] === ".") {
+        stringWithReplacedDot = string.slice(0, string.length - 1);
+    }
+    return stringWithReplacedDot;
+}
 
 function separateWithDots() {
-    var inputText = document.getElementById("inputField").value;
-    var textWithReplacedDots = inputText.replace(".", "")
-    var separatedText = "";
 
-    for(var i = 0; i < textWithReplacedDots.length; i++) {
-        if((textWithReplacedDots.length - 1 - i) % 3 === 0 ) {
-            separatedText += textWithReplacedDots[i] + ".";
+    var inputField = document.querySelector("input");
+    var valueString = inputField.value;
+    var valueStringWithReplacedDots = valueString.replace(/[.]/g, "");
+    var valueStringWithReplacedDotsLength = valueStringWithReplacedDots.length;
+    var editedString = "";
+    var lengthModuleThree = valueStringWithReplacedDotsLength % 3;
+
+    for (var i = 0; i < valueStringWithReplacedDotsLength; i++) {
+        if( ((((i+1) % 3) === lengthModuleThree) || (i + 1 === lengthModuleThree))  ) {
+            editedString += (valueStringWithReplacedDots[i] + ".");
         } else {
-            separatedText += textWithReplacedDots[i];
+            editedString += valueStringWithReplacedDots[i];
         }
     }
 
-    document.getElementById("inputField").value = separatedText;
+
+    document.querySelector("input").value = replaceFinalDot(editedString);
 }
 
 // Task8
@@ -224,5 +262,28 @@ for (var i = 0; i < tableBody.children.length; i++) {
 }
 
 // Task11
-//todo
+
+// add to html file
+// <input id="inputField" oninput="countSymbolsAmountLimit(10)">
+// <div id="limitMessageText"></div>
+
+function countSymbolsAmountLimit(symbolsLimit) {
+
+    var beforeLimitMessageArray = ["Left ", " symbols to type"];
+    var afterLimitMessageArray = ["Limit is exceeded by ", " symbols"];
+
+    var inputField = document.querySelector("input");
+    var limitMessageText = document.querySelector("#limitMessageText");
+
+    var symbolsLeft = symbolsLimit - inputField.value.length;
+    var symbolsExceed = inputField.value.length - symbolsLimit;
+
+    if (inputField.value.length < symbolsLimit) {
+        limitMessageText.innerText = beforeLimitMessageArray[0] + symbolsLeft + beforeLimitMessageArray[1];
+    } else if (inputField.value.length === symbolsLimit) {
+        limitMessageText.innerText = "";
+    } else {
+        limitMessageText.innerText = afterLimitMessageArray[0] + symbolsExceed + afterLimitMessageArray[1];
+    }
+}
 

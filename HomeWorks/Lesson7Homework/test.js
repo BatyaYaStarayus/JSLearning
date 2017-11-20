@@ -1,25 +1,29 @@
-var tableBody = document.querySelector("tbody");
-var count = 0;
+function replaceFinalDot(string) {
+    var stringWithReplacedDot;
 
-
-function setColorOnClick() {
-    checkColoredCells();
-    this.style.backgroundColor = "red";
-    count++;
+    if (string[string.length - 1] === ".") {
+        stringWithReplacedDot = string.slice(0, string.length - 1);
+    }
+    return stringWithReplacedDot;
 }
 
-function checkColoredCells() {
-    if (count >= 5) {
-        alert("Enough!");
-        tableBody.children[i].children[j].removeEventListener("click", setColorOnClick);
+function separateWithDots() {
 
+    var inputField = document.querySelector("input");
+    var valueString = inputField.value;
+    var valueStringWithReplacedDots = valueString.replace(/[.]/g, "");
+    var valueStringWithReplacedDotsLength = valueStringWithReplacedDots.length;
+    var editedString = "";
+    var lengthModuleThree = valueStringWithReplacedDotsLength % 3;
+
+    for (var i = 0; i < valueStringWithReplacedDotsLength; i++) {
+        if( ((((i+1) % 3) === lengthModuleThree) || (i + 1 === lengthModuleThree))  ) {
+            editedString += (valueStringWithReplacedDots[i] + ".");
+        } else {
+            editedString += valueStringWithReplacedDots[i];
+        }
     }
-}
 
 
-
-for (var i = 0; i < tableBody.children.length; i++) {
-    for(var j = 0; j < tableBody.children[i].children.length; j++) {
-        tableBody.children[i].children[j].addEventListener("click", setColorOnClick);
-    }
+    document.querySelector("input").value = replaceFinalDot(editedString);
 }

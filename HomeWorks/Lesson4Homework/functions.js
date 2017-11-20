@@ -30,7 +30,7 @@ people.sort(function (a, b) {
 });
 
 // теперь people: [vovochka, masha, vasya]
-console.log(people[0].age) // 6
+console.log(people[0].age); // 6
 
 // Task4
 

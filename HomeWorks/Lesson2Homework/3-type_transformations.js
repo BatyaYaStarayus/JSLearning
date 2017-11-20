@@ -45,7 +45,7 @@ var m = 7;
 var obj = {
         h: 0,
         i: 'hello'
-}
+};
 
 var phrase = obj.i;
 delete obj.i;
@@ -61,7 +61,7 @@ var obj = {
     i: {
         y: 9
     }
-}
+};
 
 var num = obj.i.y;
 
@@ -78,7 +78,7 @@ var obj = {
     i: {
         y: 9
     }
-}
+};
 
 var arr = obj.h;
 

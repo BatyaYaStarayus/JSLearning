@@ -13,7 +13,7 @@ var user = {
         isContextEqualTo(window); // window
         isContextEqualTo(user); // user
     }
-}
+};
 
 console.log(user.getName()); //
 

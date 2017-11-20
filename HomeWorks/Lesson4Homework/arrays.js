@@ -53,7 +53,7 @@ function getStringAndReverseSymbols(array) {
 
     var editedString;
     var arraysElement = [];
-    var arrayWithStrings = []
+    var arrayWithStrings = [];
 
     for (var i = 0; i < array.length; i++) {
         arraysElement = array[i].split("");
@@ -149,7 +149,7 @@ var array = [
 function sortArrayByAge(array) {
     var sortedArray = array.sort(function (a, b) {
         return (a.age - b.age);
-    })
+    });
 
     return sortedArray;
 }

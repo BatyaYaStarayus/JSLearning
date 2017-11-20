@@ -38,7 +38,7 @@ b(); //error
 
 var b = function(){
     alert( 'function b');
-}
+};
 
 function a(){
     alert( 'function a' );
