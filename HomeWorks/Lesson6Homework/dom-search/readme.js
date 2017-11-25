@@ -1,5 +1,4 @@
 // Task1
-//todo not sure about 4th method
 
 document.body.getElementsByTagName("input");
 document.querySelectorAll("input");

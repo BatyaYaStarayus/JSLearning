@@ -1,4 +1,3 @@
-//@todo
 function isNimble(){ return true; } // can be called before the creation;
 var canFly = function(){ return true; }; // can't be called before the creation;
 window.isDeadly = function(){ return true; }; // is a method of Window object;

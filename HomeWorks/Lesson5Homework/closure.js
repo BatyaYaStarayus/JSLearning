@@ -30,7 +30,6 @@ var add = function (firstNumber) {
 console.log(add(2)(3));
 
 // Task3
-//todo not sure in it
 
 var numberArray = [1, 2, 3, 4, 10, 5, 6, 7];
 
