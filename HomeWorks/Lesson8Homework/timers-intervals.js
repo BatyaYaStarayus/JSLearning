@@ -62,8 +62,8 @@ function showTimeToMidnight() {
     var currentSeconds = dateObject.getSeconds();
 
     var hoursToMidnight = 23 - (+currentHours);
-    var minutesToMidnight = 60 - (+currentMinutes);
-    var secondsToMidnight = 60 - (+currentSeconds);
+    var minutesToMidnight = 59 - (+currentMinutes);
+    var secondsToMidnight = 59 - (+currentSeconds);
 
     var timeToMidnightArray = [
         hoursToMidnight.toString(),
