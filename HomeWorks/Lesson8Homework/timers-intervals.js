@@ -321,4 +321,59 @@ setInterval(startAnimation, 200);
 
 // Task8
 
-//todo
+//index.html file
+// <!DOCTYPE html>
+// <html lang="en">
+//     <head>
+//     <meta charset="UTF-8">
+//     <title>Title</title>
+//     </head>
+//     <body>
+//     <input type="text" id="phoneNumber" placeholder="Type Your phone number">
+//     <button>Enter</button>
+//     <script src="test.js"></script>
+//     </body>
+//     </html>
+
+var inputPhoneNumber = document.querySelector("#phoneNumber");
+var buttonEnter = document.querySelector("button");
+
+var message = document.createElement("span");
+
+buttonEnter.addEventListener("click", verifyNumberLength);
+
+function verifyNumberNotNan() {
+    if(isNaN(+inputPhoneNumber.value)) {
+        return false;
+    }
+    return true;
+}
+
+function createSpan(patternMatches) {
+    if(patternMatches) {
+        message.innerHTML = "OK";
+        message.style.color = "green";
+    } else {
+        message.innerHTML = "ERROR";
+        message.style.color = "red";
+    }
+
+    document.body.appendChild(message);
+}
+
+function deleteSpan() {
+    document.body.removeChild(message);
+
+    inputPhoneNumber.value = "";
+    inputPhoneNumber.setAttribute("placeholder", "Type Your phone number");
+}
+
+function verifyNumberLength() {
+    if( (inputPhoneNumber.value.length === 8) && (verifyNumberNotNan()) ) {
+        createSpan(true);
+    } else {
+        createSpan(false);
+    }
+
+    setTimeout(deleteSpan, 4000);
+}

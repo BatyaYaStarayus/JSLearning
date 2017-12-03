@@ -29,6 +29,10 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lesson6Homework/index.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lesson6Homework/test.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lesson7Homework/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lesson8Homework/Pages/Page1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lesson8Homework/Pages/Page2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lesson8Homework/Pages/Page3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lesson8Homework/Pages/Page4.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lesson8Homework/bom.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lesson8Homework/dom/dom.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lesson8Homework/dom/index.html" />
@@ -53,38 +57,68 @@
       <file leaf-file-name="bom.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lesson8Homework/bom.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1649">
-              <caret line="97" column="2" lean-forward="false" selection-start-line="97" selection-start-column="2" selection-end-line="97" selection-end-column="2" />
+            <state relative-caret-position="250">
+              <caret line="320" column="6" lean-forward="true" selection-start-line="320" selection-start-column="6" selection-end-line="320" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="timers-intervals.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Lesson8Homework/timers-intervals.js">
+      <file leaf-file-name="Page1.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Lesson8Homework/Pages/Page1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="29">
-              <caret line="299" column="14" lean-forward="true" selection-start-line="299" selection-start-column="14" selection-end-line="299" selection-end-column="14" />
+            <state relative-caret-position="102">
+              <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Page2.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lesson8Homework/Pages/Page2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Page3.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lesson8Homework/Pages/Page3.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Page4.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lesson8Homework/Pages/Page4.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Lesson8Homework/index.html">
+        <entry file="file://$PROJECT_DIR$/Lesson8Homework/dom/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="7" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="7" />
+            <state relative-caret-position="555">
+              <caret line="74" column="7" lean-forward="true" selection-start-line="74" selection-start-column="7" selection-end-line="74" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Lesson8Homework/test.js">
+      <file leaf-file-name="dom.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lesson8Homework/dom/dom.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="33" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="33" />
+            <state relative-caret-position="-1328">
+              <caret line="38" column="8" lean-forward="false" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -95,8 +129,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -105,6 +139,7 @@
       <find>getNumbersArray</find>
       <find>butt</find>
       <find>pause</find>
+      <find>import</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -149,11 +184,17 @@
         <option value="$PROJECT_DIR$/Lesson5Homework/functions-advanced.js" />
         <option value="$PROJECT_DIR$/Lesson8Homework/dom/test.js" />
         <option value="$PROJECT_DIR$/Lesson8Homework/dom/index.html" />
-        <option value="$PROJECT_DIR$/Lesson8Homework/dom/dom.js" />
-        <option value="$PROJECT_DIR$/Lesson8Homework/bom.js" />
+        <option value="$PROJECT_DIR$/Lesson8Homework/timers-intervals.js" />
         <option value="$PROJECT_DIR$/Lesson8Homework/index.html" />
         <option value="$PROJECT_DIR$/Lesson8Homework/test.js" />
-        <option value="$PROJECT_DIR$/Lesson8Homework/timers-intervals.js" />
+        <option value="$PROJECT_DIR$/Lesson8Homework/bom.js" />
+        <option value="$PROJECT_DIR$/Lesson8Homework/dom/dom.js" />
+        <option value="$PROJECT_DIR$/Lesson8Homework/Page1.html" />
+        <option value="$PROJECT_DIR$/Lesson8Homework/Page2.html" />
+        <option value="$PROJECT_DIR$/Lesson8Homework/Pages/Page1.html" />
+        <option value="$PROJECT_DIR$/Lesson8Homework/Pages/Page4.html" />
+        <option value="$PROJECT_DIR$/Lesson8Homework/Pages/Page3.html" />
+        <option value="$PROJECT_DIR$/Lesson8Homework/Pages/Page2.html" />
       </list>
     </option>
   </component>
@@ -198,6 +239,12 @@
               <item name="HomeWorks" type="b2602c69:ProjectViewProjectNode" />
               <item name="HomeWorks" type="462c0819:PsiDirectoryNode" />
               <item name="Lesson8Homework" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HomeWorks" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HomeWorks" type="462c0819:PsiDirectoryNode" />
+              <item name="Lesson8Homework" type="462c0819:PsiDirectoryNode" />
+              <item name="Pages" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -275,7 +322,7 @@
       <workItem from="1511812066069" duration="2282000" />
       <workItem from="1512166042969" duration="598000" />
       <workItem from="1512248346868" duration="2589000" />
-      <workItem from="1512251303515" duration="9730000" />
+      <workItem from="1512251303515" duration="22736000" />
     </task>
     <task id="LOCAL-00001" summary="Added homework for Lesson2">
       <created>1508179965229</created>
@@ -288,7 +335,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="183250000" />
+    <option name="totallyTimeSpent" value="196256000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -366,48 +413,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Lesson3Homework/5-loops-statements.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lesson3Homework/4-functions-simple.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lesson2Homework/1-passing-by-reference.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" column="32" lean-forward="true" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lesson2Homework/2-operators.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lesson2Homework/3-type_transformations.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lesson2Homework/1-passing-by-reference.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Lesson2Homework/3-type_transformations.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -645,48 +650,98 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Lesson8Homework/dom/test.js" />
-    <entry file="file://$PROJECT_DIR$/Lesson8Homework/dom/index.html">
+    <entry file="file://$PROJECT_DIR$/Lesson8Homework/timers-intervals.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1258">
-          <caret line="74" column="7" lean-forward="true" selection-start-line="74" selection-start-column="7" selection-end-line="74" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lesson8Homework/dom/dom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="33" column="60" lean-forward="true" selection-start-line="33" selection-start-column="60" selection-end-line="33" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lesson8Homework/bom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1649">
-          <caret line="97" column="2" lean-forward="false" selection-start-line="97" selection-start-column="2" selection-end-line="97" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lesson8Homework/test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="33" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="33" />
+        <state relative-caret-position="2992">
+          <caret line="359" column="0" lean-forward="true" selection-start-line="359" selection-start-column="0" selection-end-line="359" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Lesson8Homework/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="7" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="7" />
+        <state relative-caret-position="17">
+          <caret line="1" column="16" lean-forward="true" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lesson8Homework/timers-intervals.js">
+    <entry file="file://$PROJECT_DIR$/Lesson8Homework/test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="299" column="14" lean-forward="true" selection-start-line="299" selection-start-column="14" selection-end-line="299" selection-end-column="14" />
+        <state relative-caret-position="488">
+          <caret line="140" column="17" lean-forward="true" selection-start-line="66" selection-start-column="0" selection-end-line="140" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lesson8Homework/dom/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="74" column="7" lean-forward="true" selection-start-line="74" selection-start-column="7" selection-end-line="74" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lesson8Homework/dom/dom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1328">
+          <caret line="38" column="8" lean-forward="false" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lesson8Homework/bom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="320" column="6" lean-forward="true" selection-start-line="320" selection-start-column="6" selection-end-line="320" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lesson8Homework/Page1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lesson8Homework/Page2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lesson8Homework/Pages/Page2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lesson8Homework/Pages/Page3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lesson8Homework/Pages/Page4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lesson8Homework/Pages/Page1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
           <folding />
         </state>
       </provider>

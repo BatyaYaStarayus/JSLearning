@@ -37,7 +37,6 @@ for (var i = 0; i < aElements.length; i++) {
 addElementButton.addEventListener("click", addLiElement);
 
 // Task2
-//todo some refactor & tweaks
 
 var userArray = [];
 var buttonAddNewUser = document.querySelector("button.btn.btn-warning");
@@ -58,6 +57,7 @@ function checkNameIsEmpty() {
     if (inputFieldsArray[0].value.length < 2 || !isNaN(inputFieldsArray[0].value)) {
         createBorder(inputFieldsArray[0]);
         addInfoDiv();
+        inputFieldsArray[0].value = "";
         return true;
     }
     return false;
@@ -67,16 +67,14 @@ function checkAgeIsEmpty() {
     if (isNaN(inputFieldsArray[1].value) || inputFieldsArray[1].value.length === 0) {
         createBorder(inputFieldsArray[1]);
         addInfoDiv();
+        inputFieldsArray[1].value = "";
         return true;
     }
     return false;
 }
 
 function checkInputFieldsAreEmpty() {
-    checkNameIsEmpty();
-    checkAgeIsEmpty();
-
-    return checkAgeIsEmpty() + checkAgeIsEmpty();
+    return checkNameIsEmpty() + checkAgeIsEmpty();
 }
 
 function addInfoDiv() {
