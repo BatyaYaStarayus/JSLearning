@@ -61,8 +61,13 @@ startButton.addEventListener("click", startTimer);
 function startTimer() {
     startCount = setInterval(increaseTime, 10);
 
+    // согласна с тем что упри нажатии на старт нужно бы как то запретить пользователю туда снова нажимать поэтому я думаю что 
+    // тут лучше исопользовать менее сложную логику например на click добавлять класс clicked и в функции startTimer проверять на наличие
+    // этого класса - если это первый раз то тогда вся логика как есть - если следующий раз то тогда просто return из функции
     startButton.removeEventListener("click", startTimer);
 
+    // тут то же самое лучше сразу же добавить обработчик события при загрузке странице но отслеживать по какому что флагу что остановить
+    // таймер сейчас возможно например
     stopButton.addEventListener("click", stopTimer);
     pauseContinueButton.addEventListener("click", pauseTimer);
 }
@@ -146,6 +151,8 @@ function showCurrentTime() {
     var currentSeconds = dateObject.getSeconds();
 
     div.innerHTML = currentHours + ":" + currentMinutes + ":" + currentSeconds;
+    // все ок но сделать бы красиво чтобы показыватло например 
+    // 06:06:06 а не 6:6:6
 }
 
 setInterval(showCurrentTime, 10);
@@ -317,6 +324,7 @@ function startAnimation() {
     }
 }
 
+// класс =) интересный подход =)
 setInterval(startAnimation, 200);
 
 // Task8
