@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input id="inputField" type="text" list="carsList" oninput="fillBannerWithElements()">
+        <datalist id="carsList">
+        </datalist>
+    <button id="resetButton" class="buttons" type="button" onclick="clearInputField()">Reset</button>
+    <button id="showHistoryButton" class="buttons" type="button" onclick="showHistory()">Show History</button>
+    <button id="resetHistoryButton" class="buttons" type="button" onclick="resetHistory()">Reset History</button>
+    <script src="src/carSearch.js"></script>
+</body>
+</html>
