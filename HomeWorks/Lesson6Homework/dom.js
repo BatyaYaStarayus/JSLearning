@@ -98,6 +98,7 @@ paragraph[0].style.color = "red";
 var element;
 
 if(element.childNodes < 1) {
+    // here you should check the length of childNodes ??
     return false
 }
 
@@ -132,6 +133,7 @@ function createElementInBlock(blockLink, elementName) {
 }
 
 createElementInBlock("div", "table");
+// every thing is working fine but div element cannot be added to table element, just semantic error) more to html rules but still
 
 // Task7
 
@@ -151,7 +153,11 @@ function addChildrenTo(block, count, type) {
 
     var blockToAddChildren = document.querySelector(block);
 
+    // you can create a variable 1 time here
+    // var elementToAddAsAChild 
     for (count; count > 0; count--) {
+        // here you can just use it because when you creating it here it still goes to up of scope function 
+        // (eg: only functions create scope if and for or other statements didn't created them
         var elementToAddAsAChild = document.createElement(type);
         blockToAddChildren.appendChild(elementToAddAsAChild);
     }
@@ -197,6 +203,18 @@ addTagNameToClass("facebox");
 
 function createList(elementsArray, ordered) {
 
+    // so the main difference between ordered or not is creating ul or ol, so you can make it simplier:
+    
+    /*
+        var list = document.createElement(ordered ? "ol" : "ul");
+        document.body.appendChild(list);
+
+        for (var i = 0; i < elementsArray.length; i++) {
+            var li = document.createElement("li");
+            li.innerText = elementsArray[i];
+            list.appendChild(li);        }
+    
+    */
     if(!ordered) {
         var ul = document.createElement("ul");
         document.body.appendChild(ul);
