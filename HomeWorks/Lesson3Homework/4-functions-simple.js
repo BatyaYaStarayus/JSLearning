@@ -33,6 +33,24 @@ function range(x, y) {
     } else {
         result += x;
     }
+    
+    // мне нравиться что проверяется какое число больше, но чтобы несколько раз не писать одно и то же можно было бы 
+    // сделать по другому, например:
+    
+    /* 
+    var 
+        start = x, 
+        end = y;
+        
+    if (x > y) { 
+      start = y;
+      end = x;
+    } else if (x === y) {
+        return alert("Plese enter a prpper rangle!");
+    }
+
+    и потом уже цикл с использыванием новых переменных start end
+    */
 
     return result;
 }
@@ -59,6 +77,7 @@ function getPrimesSumBelow(x) {
 
     var primeNumbersSum = 0;
 
+    // а почему 1 не включаем, она ведь тоже простое число?
     for (var i = x; i > 1; i--) {
         if (isPrime(i)) {
             primeNumbersSum += i;
@@ -86,6 +105,7 @@ function returnOddNumbersInRangeArray(x, y) {
 
     if(x < y) {
         for (var i = 0, j = x; j <= y; j++) {
+            // спринцыпе короткая запись позволяет писать просто if (isOdd(j)) идентично к if (isOdd(j) === true)
             if (isOdd(j) === true) {
                 oddNumbersArray[i] = j;
                 i++;
@@ -103,6 +123,7 @@ returnOddNumbersInRangeArray(5, 10);
 function waitUntillTypingNine() {
     var number = +prompt("Type any number");
 
+    // можно тут еще проверу на не число сделать через isNaN
     if (number !== 9) {
         waitUntillTypingNine();
     } else {
