@@ -6,6 +6,7 @@ var addElementButton = document.querySelector("button.btn.btn-success");
 
 function removeLiElement() {
     this.parentNode.parentNode.removeChild(this.parentNode);
+    // или тут можно сделать проще: this ,parentNode.remove()
 
     setLiElementText();
 }
@@ -74,6 +75,7 @@ function checkAgeIsEmpty() {
 }
 
 function checkInputFieldsAreEmpty() {
+    // а почему тут + а не && это как то странно =)
     return checkNameIsEmpty() + checkAgeIsEmpty();
 }
 
