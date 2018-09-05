@@ -46,6 +46,7 @@ function isTrueFirst(test) {
 function isTrueSecond(test) {
     (test === true) ? console.log("True") : console.log("False");
 }
+// или можно просто написать console.log(test ? "True" : "False");
 
 // Task4
 
@@ -154,6 +155,17 @@ function getDaysNamesByLanguage(lang) {
         ["en", ArrEn],
         ["de", ArrDe]
     ];
+    
+    // тут неправильный синтаксис, если хотелось создать объект нужно использовать скобки {}
+    /* 
+    const langArr = {
+        "ru": ArrRu,
+        "en":, ArrEn,
+        "de":, ArrDe
+    };
+    */
+    
+    // идея хорошая реализация немного нелогичная, удобней будет если это будет в объекте, и тогда условия цикла можно будет поменять на if/else или switch/case:
 
     var arr = [];
 
